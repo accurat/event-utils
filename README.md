@@ -49,7 +49,7 @@ import { preventingDefault } from '@accurat/event-utils'
 <a href={href} onClick={preventingDefault(gotoPage)} />
 ```
 
-Those functions use the powers of **functional programming** 🌪, so you can combine them!
+Also those functions use the powers of **functional programming** 🌪, so you can combine them!
 
 ```js
 import { preventingDefault, replaceArguments } from '@accurat/event-utils'
@@ -69,6 +69,8 @@ import { preventingDefault, replaceArguments } from '@accurat/event-utils'
 </div>
 
 ```
+
+This way you don't have to use anymore the **build pattern** in react, and you can get rid of all those boilerplate methods in the component!
 
 
 ## API
