@@ -1,0 +1,34 @@
+{
+	"name": "@accurat/event-utils",
+	"version": "1.0.0",
+	"description": "High order functions to use in React's JSX when working with events",
+	"license": "MIT",
+	"repository": "accurat/event-utils",
+	"author": {
+		"name": "Marco Fugaro",
+		"email": "marco.fugaro@gmail.com",
+		"url": "https://github.com/marcofugaro"
+	},
+	"contributors": [
+		"Marco Fugaro <marco.fugaro@gmail.com> (https://github.com/marcofugaro)",
+		"Luca Falasco <falasco.luca@gmail.com> (https://github.com/lucafalasco)",
+		"Cesare Soldini <cesare.soldini@gmail.com> (https://github.com/caesarsol)",
+		"Marco Vettorello <marco.vettorello@accurat.it> (https://github.com/markov00)",
+		"nkint <alberto.massa@accurat.it> (https://github.com/nkint)",
+		"YeasterEgg <l.d.mattiazzi@gmail.com> (https://github.com/YeasterEgg)",
+		"GabrieleLippi <gabriele.lippi@accurat.it> (https://github.com/GabrieleLippi)"
+	],
+	"keywords": [
+		"event",
+		"utils",
+		"react",
+		"jsx"
+	],
+	"files": [
+		"index.js"
+	],
+	"engines": {
+    "node": ">=6"
+  },
+	"sideEffects": false
+}
