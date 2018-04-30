@@ -1,18 +1,20 @@
 function preventingDefault(fn) {
-  // react supports passing null to event bindings
-  if (fn === null) return null
-
   return e => {
     e.preventDefault()
+
+    // react supports passing null to event bindings
+    if (fn === null) return null
+
     return fn(e)
   }
 }
 
 function stoppingPropagation(fn) {
-  if (fn === null) return null
-
   return e => {
     e.stopPropagation()
+
+    if (fn === null) return null
+
     return fn(e)
   }
 }
