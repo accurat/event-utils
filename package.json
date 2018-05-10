@@ -1,6 +1,6 @@
 {
 	"name": "@accurat/event-utils",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "High order functions to use in React's JSX when working with events",
 	"license": "MIT",
 	"repository": "accurat/event-utils",
