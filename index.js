@@ -43,6 +43,14 @@ function replaceArguments(fn, ...args) {
   return () => fn(...args)
 }
 
+function attachListenersToKeys(keysListenersAssociation) {
+  return e => {
+    if (keysListenersAssociation.hasOwnProperty(e.key)) {
+      return keysListenersAssociation[e.key](e)
+    }
+  }
+}
+
 
 module.exports = {
 	preventingDefault,
@@ -51,4 +59,5 @@ module.exports = {
 	eventTargetExtractor,
 	addArguments,
 	replaceArguments,
+  attachListenersToKeys,
 }

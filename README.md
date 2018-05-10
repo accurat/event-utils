@@ -54,7 +54,7 @@ Also those functions use the powers of **functional programming** 🌪, so you c
 ```js
 import { preventingDefault, replaceArguments } from '@accurat/event-utils'
 
-/// ...
+// ...
 
 <div>
   {options.map((option, i) =>
@@ -67,11 +67,26 @@ import { preventingDefault, replaceArguments } from '@accurat/event-utils'
     </a>
   )}
 </div>
-
 ```
 
 This way you don't have to use anymore the **build pattern** in react, and you can get rid of all those boilerplate methods in the component!
 
+Another thing you can get rid of is the `onKeyDown` method with the switch case inside that fires a function on a certain `event.key`, you can use an object association instead:
+
+```js
+import { attachListenersToKeys } from '@accurat/event-utils'
+
+// ...
+
+<input
+  type="text"
+  onKeyDown={attachListenersToKeys({
+    Enter: preventingDefault(state.commit),
+    ArrowDown: state.selectNext,
+    ArrowUp: state.selectPrev,
+  })}
+/>
+```
 
 ## API
 
