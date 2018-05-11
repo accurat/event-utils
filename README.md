@@ -97,6 +97,7 @@ The available functions are:
 - **eventTargetExtractor(fn)**
 - **addArguments(fn, ...args)**
 - **replaceArguments(fn, ...args)** (similar to `lodash.partial`)
+- **attachListenersToKeys(obj)**
 
 If the names aren't self-explanatory enough, you can check out [the source code](https://github.com/accurat/event-utils/blob/master/index.js), the functions are really simple and straightforward.
 
